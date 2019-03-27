@@ -38,7 +38,7 @@ export default class MainNavbar extends Component {
       <div className=" container"> 
         <div className="row">
             <div className="col-md-8"></div>
-            <div className="col-md-4">
+            <div className="col-md-4 navbar">
                 <ModuleGroupSelector moduleGroups={this.state.categories} />
             </div>
         </div>   

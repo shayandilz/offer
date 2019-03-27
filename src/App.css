@@ -3,17 +3,7 @@ body{
 }
 
 
-/*-------------------------------------Tobbanner-----------------------------------------*/
 
-.topbanner{
-  height:300px;
-  margin: 0 auto;
-  position: relative;
-  overflow: hidden;
-  list-style: none;
-  padding: 0;
-  z-index: 1;
-}
 
 /*NAVBAR*/
 #navbar_main{

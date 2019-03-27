@@ -29,7 +29,7 @@ export default class Items_action extends Component {
       ContainerEl: 'section',
       WrapperEl: 'section',
       containerClass:'containerClasss',
-      slidesPerView: 3,
+      slidesPerView: 5,
       spaceBetween: 20,
       slidesPerGroup: 1,
       autoplay:true,
@@ -43,7 +43,7 @@ export default class Items_action extends Component {
     
     const Items_list = this.state.items.map((item, index) => {
       return(
-        <div className="col-md-4" key={index.toString()} id="editors">
+        <div className="col-md-2" key={index.toString()} id="editors">
              
                    <div className="figure">
                       

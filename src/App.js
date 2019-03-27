@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import Sections from './Dashboard/Sections'
 import {Provider} from './context'
+import './Layout/Dashboard.css'
 import './App.css';
 
 
