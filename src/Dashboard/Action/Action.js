@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+<<<<<<< HEAD
 import Categories_action from './Category/Categories_action'
 import Items_action from './Items/Items_action'
 import axios from 'axios'
@@ -29,6 +30,21 @@ class Action extends Component {
             return <Items_action value={this.state.action} /> 
         }
         return(<div></div>)
+=======
+
+class Action extends Component {
+    constructor(props){
+        // console.log(props);
+        
+        super()
+    }
+    render() {
+        return (
+            <div>
+                
+            </div>
+        );
+>>>>>>> 85371ae15f896054c3971cbb4e10a2b1d4f5c3ba
     }
 }
 

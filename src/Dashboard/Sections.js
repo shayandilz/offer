@@ -1,10 +1,17 @@
 import React, { Component } from 'react'
+<<<<<<< HEAD
 
+=======
+import axios from 'axios'
+>>>>>>> 85371ae15f896054c3971cbb4e10a2b1d4f5c3ba
 import * as axiosDashboardContext from '../context'
 import Carousel from './Carousel/Carousels'
 import Editors from './Editors/Editors'
 import Action from './Action/Action'
+<<<<<<< HEAD
 import MainNavbar from './Navbar/Main'
+=======
+>>>>>>> 85371ae15f896054c3971cbb4e10a2b1d4f5c3ba
 export default class Sections extends Component {
     constructor(){
         super()
@@ -31,6 +38,7 @@ render(){
         })
     return(
         <div>
+<<<<<<< HEAD
         <MainNavbar />
             <div className='container'>
                 <div className='row row justify-content-sm-center'>
@@ -41,6 +49,10 @@ render(){
             </div>
         </div>
         
+=======
+            {section_map}
+        </div>
+>>>>>>> 85371ae15f896054c3971cbb4e10a2b1d4f5c3ba
     )
 }
 

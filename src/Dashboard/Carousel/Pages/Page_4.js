@@ -1,9 +1,14 @@
 import React, { Component } from 'react';
+<<<<<<< HEAD
 import axios from 'axios'
+=======
+
+>>>>>>> 85371ae15f896054c3971cbb4e10a2b1d4f5c3ba
 class Page_4 extends Component {
     constructor(props){
         // console.log(props);
         super(props)
+<<<<<<< HEAD
         this.state = {
             apiUrl:'https://api2.off-er.ir/user/get/carousel',  
             banner:[]
@@ -26,6 +31,15 @@ class Page_4 extends Component {
         })
         return (
             <div>{banner_4}</div>
+=======
+        
+    }
+    render() {
+        return (
+            <div>
+                
+            </div>
+>>>>>>> 85371ae15f896054c3971cbb4e10a2b1d4f5c3ba
         );
     }
 }
