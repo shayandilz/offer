@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 import ModuleGroup from './ModuleGroup'
 
 class ModuleGroupSelector extends React.Component {
@@ -25,7 +25,7 @@ class ModuleGroupSelector extends React.Component {
             Analytics Modules
           </div>
           <div className={`analyticsDropDown ${this.state.isVisible ? 'visible': ''}`}>
-            {moduleGroups.map(item => <ModuleGroup id={item.key} name={item.name} />)}
+            {moduleGroups.map((item, index) => <ModuleGroup key={index.toString()} id={item.key} name={item.name} />)}
           </div>
         </div>
       )

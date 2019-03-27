@@ -54,7 +54,7 @@ export default class Items_action extends Component {
                    </div>
                    <div className="col-sm-12"><p className="nowrap">{item.name}</p></div> 
                    <div><p>{item.last_price}</p><span>{item.current_price}</span></div> 
-                   <div> <button type="button" className=" btn btn-danger btn-sm btn-block">Buy From {item.store_name}<a href='_blank'></a></button></div>   
+                   <div> <button type="button" className=" btn btn-danger btn-sm btn-block"><a href='_blank'>Buy From {item.store_name}</a></button></div>   
         </div>    
       )
     })

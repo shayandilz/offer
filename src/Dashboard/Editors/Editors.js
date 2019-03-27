@@ -75,7 +75,7 @@ import Swiper from "react-id-swiper";
                 {this.state.original.map((items, i) => {
                   return (
                     <div key={i.toString()}>
-                      <img className="img_editors" src={items.thumb_url} />
+                      <img className="img_editors" src={items.thumb_url} alt='editors'/>
                     </div>
                   );
                 })}
@@ -86,7 +86,7 @@ import Swiper from "react-id-swiper";
                 {this.state.thumbnail.map((items, i) => {
                   return (
                     <div key={i.toString()}>
-                      <img className="thumb_editors" src={items.thumb_url} />
+                      <img className="thumb_editors" src={items.thumb_url} alt='editors'/>
                     </div>
                   );
                 })}

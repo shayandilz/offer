@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import Categories_action from './Category/Categories_action'
-import Items_action from './Items/Items_action'
+import CategoriesAction from './Category/Categories_action'
+import ItemsAction from './Items/Items_action'
 import axios from 'axios'
 class Action extends Component {
     constructor(props){
@@ -24,9 +24,9 @@ class Action extends Component {
     }
     render() {
         if(this.state.action.page === "categories" ){
-            return <Categories_action value={this.state.action} />       
+            return <CategoriesAction value={this.state.action} />       
         }else if(this.state.action.page === "items"){
-            return <Items_action value={this.state.action} /> 
+            return <ItemsAction value={this.state.action} /> 
         }
         return(<div></div>)
     }

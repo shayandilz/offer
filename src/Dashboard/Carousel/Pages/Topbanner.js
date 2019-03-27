@@ -43,7 +43,7 @@ class Topbanner extends Component {
         const topbanner_map = this.state.topbanner.map((items, index) => {
             return ( 
                    
-                        <img key={index.toString()} src={items.url} />
+                        <img key={index.toString()} src={items.url}  alt="topbanner"/>
                     
                 ) 
         })

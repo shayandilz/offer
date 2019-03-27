@@ -22,7 +22,7 @@ class Page_4 extends Component {
 
     render() {
         const banner_4 = this.state.banner.map((items, index) => {
-            return <img key={index.toString()} src={items.url} />
+            return <img key={index.toString()} src={items.url} alt="page4"/>
         })
         return (
             <div>{banner_4}</div>
