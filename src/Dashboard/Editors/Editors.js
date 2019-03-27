@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React, { Component } from "react";
 import axios from "axios";
 import Swiper from "react-id-swiper";
@@ -101,23 +100,3 @@ import Swiper from "react-id-swiper";
   }
 }
 export default Editors
-=======
-import React, { Component } from 'react';
-
-class Editors extends Component {
-    constructor(props){
-        // console.log(props);
-        
-        super()
-    }
-    render() {
-        return (
-            <div>
-                
-            </div>
-        );
-    }
-}
-
-export default Editors;
->>>>>>> 85371ae15f896054c3971cbb4e10a2b1d4f5c3ba

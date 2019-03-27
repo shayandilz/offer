@@ -12,11 +12,6 @@ class Topbanner extends Component {
     }
     componentDidMount(){
         const id = this.props.value.id
-<<<<<<< HEAD
-=======
-       
-        
->>>>>>> 85371ae15f896054c3971cbb4e10a2b1d4f5c3ba
         axios({
             url:(`${this.state.apiUrl}`),
             method: 'post',
@@ -26,7 +21,6 @@ class Topbanner extends Component {
         })
     }
     render() {
-<<<<<<< HEAD
         const params = {
             pagination: {
             el: '.swiper-pagination',
@@ -60,17 +54,6 @@ class Topbanner extends Component {
                 </Swiper>
             )
             
-=======
-        console.log(this.state.topbanner);
-        const topbanner_map = this.state.topbanner.map((items, index) => {
-            console.log(items);
-            
-        })
-        return (
-            <Swiper>
-                {topbanner_map}
-            </Swiper>
->>>>>>> 85371ae15f896054c3971cbb4e10a2b1d4f5c3ba
         );
     }
 }

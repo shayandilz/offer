@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-<<<<<<< HEAD
     "axios": "^0.18.0",
     "bootstrap": "^4.3.1",
     "react": "^16.8.5",
@@ -13,11 +12,6 @@
     "react-scripts": "2.1.8",
     "reactstrap": "^7.1.0",
     "swiper": "^4.5.0"
-=======
-    "react": "^16.8.5",
-    "react-dom": "^16.8.5",
-    "react-scripts": "2.1.8"
->>>>>>> 85371ae15f896054c3971cbb4e10a2b1d4f5c3ba
   },
   "scripts": {
     "start": "react-scripts start",
