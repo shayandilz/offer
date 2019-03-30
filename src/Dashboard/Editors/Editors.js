@@ -46,44 +46,58 @@ import Swiper from "react-id-swiper";
 
   render() {
     const params = {
-      
+      containerClass:'editorSwiperGallery',
       slidesPerView: 1,
-      spaceBetween: 20,
-      slidesPerGroup: 1,
-      
-      
-      crossFade: true
+      loopedSlides:5,
+      centeredSlides:true,
+      loop:true
     };
     const thumbnailParams = {
-     
+   
+      containerClass:'editorSwiperThumbs',
+      slideClass:'sliderThumb',
       direction: "vertical",
-      slidesPerView: 3,
-      spaceBetween: 5,
-      slidesPerGroup: 1,
-      autoplay: true,
-      loop: true,
-      loopFillGroupWithBlank: false,
+      slidesPerView: 4,
+      loopedSlides:5,
+      loop:true
+      
+      
     };
 
     return (
       <React.Fragment>
         <div className="container">
-          {this.state.thumbnail.length && this.state.original.length && (
+          {this.state.original.length && (
             <div className="row">
-            <div className="col">
-              <Swiper {...params} ref={this.galleryRef}>
+            <div className="col-md-10">
+              <Swiper {...params} ref={this.galleryRef} className="row">
                 {this.state.original.map((items, i) => {
                   return (
-                    <div key={i.toString()}>
-                      <img className="img_editors" src={items.thumb_url} alt='editors'/>
+                    <div key={i.toString()} >
+                    <div className='row'>
+                    
+                      <div className="col-md-6">
+                        <h5>{items.name}</h5>
+                          <div>
+                            <h6>{items.store_name}</h6>
+                            <img src={items.store.thumb_url} alt="editors" />
+                          </div>
+                        <p>{items.current_price}</p>
+                        <p>{items.last_price}</p>
+                      </div>
+                      <div className="col-md-6">
+                        <img className="img_editors" src={items.thumb_url} alt='editors'/>
+                      </div>
+                    </div>
+                      
                     </div>
                   );
                 })}
               </Swiper>
             </div>
-            <div className="col">
+            <div className="col-md-2">
               <Swiper {...thumbnailParams} ref={this.thumbRef}>
-                {this.state.thumbnail.map((items, i) => {
+                {this.state.original.map((items, i) => {
                   return (
                     <div key={i.toString()}>
                       <img className="thumb_editors" src={items.thumb_url} alt='editors'/>

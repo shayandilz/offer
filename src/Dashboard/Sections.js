@@ -34,7 +34,7 @@ render(){
         <MainNavbar />
             <div className='container'>
                 <div className='row row justify-content-sm-center'>
-                    <div className='col-12'>
+                    <div className='col-10'>
                         {section_map}
                     </div>
                 </div>

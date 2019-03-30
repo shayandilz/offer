@@ -28,36 +28,38 @@ export default class Categories_action extends Component {
    
   render() {
     const params = {
-      slidesPerView: 8,
-      spaceBetween: 40,
-      slidesPerGroup: 1,
+      slidesPerView: 9,
+      spaceBetween: 10,
+     
+      loopedSlides:19,
       loop: true,
-      loopFillGroupWithBlank: false,
+      
       rebuildOnUpdate: true,
+
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev'
       }
     };
-
-    const categ_list = this.state.cat_list.map(( item, index) => {
-       
-      return (
-          <div id="icon_circle" key={index.toString()}>
-              <a href="_blank"> 
-                  <img src={item.icon.url}  alt="PRODUCTS"/>
-                  <h6 >{item.name}</h6>
-                  </a>
-               </div>     
-      )
- })
     return(
-      this.state.cat_list.length > 0 && (
-        <Swiper className="swippper" {...params}>
-        {categ_list}
-        </Swiper>
+      <React.Fragment>
+        {this.state.cat_list.length > 0 && (
+        
+            <Swiper {...params}>
+              {this.state.cat_list.map(( item, index) => {
+                return (
+                  <div id="icon_circle" key={index.toString()}>
+                    <a href="_blank"> 
+                      <img src={item.icon.url}  alt="PRODUCTS"/>
+                      <h6 >{item.name}</h6>
+                    </a>
+                  </div>     
+                );
+              })}
+            </Swiper>
+        
+        )}
+      </React.Fragment>
     )
-    
-    ) 
-    }
+  }    
 }
