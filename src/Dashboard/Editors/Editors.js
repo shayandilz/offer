@@ -77,35 +77,33 @@ import './Editors.css'
               <Swiper {...params} ref={this.galleryRef} className="row">
                 {this.state.original.map((items, i) => {
                   return (
-                    <div key={i.toString()} >
-                    <div className='row'>
-                    
-                      <div className="col-md-6">
-                        <h5 className="item_name">{items.name}</h5>
-                        <div className="sexy_line"></div>
+                    <div key={i.toString()} id="editors_gallery">
+                      <div className='row'>
+                        <div className="col-md-6">
+                          <h5>{items.name}</h5>
+                          <div className="sexy_line mb-2"></div>
                           <div>
-                            <h6>{items.store_name}</h6>
+                            <h6>{items.store_name}<span>: فروشنده</span></h6>
                             <img src={items.store.thumb_url} alt="editors" />
                           </div>
-                        <p>{items.current_price}</p>
-                        <p>{items.last_price}</p>
+                          <button type="button" className='btn btn-light btn-block disabled mt-5'>{items.last_price}</button>
+                          <button type="button" className='btn btn-danger btn-block mt-1'>{items.current_price}</button>
+                        </div>
+                        <div className="col-md-6 mt-4" id="img_editors">
+                          <img src={items.thumb_url} alt='editors'/>
+                        </div>
                       </div>
-                      <div className="col-md-6 mt-4" id="img_editors">
-                        <img src={items.thumb_url} alt='editors'/>
-                      </div>
-                    </div>
-                      
                     </div>
                   );
                 })}
               </Swiper>
             </div>
-            <div className="col-md-2">
+            <div className="col-md-2 ">
               <Swiper {...thumbnailParams} ref={this.thumbRef}>
                 {this.state.original.map((items, i) => {
                   return (
-                    <div key={i.toString()}>
-                      <img className="thumb_editors" src={items.thumb_url} alt='editors'/>
+                    <div key={i.toString()} className=''>
+                      <img className="thumb_editors mt-2" src={items.thumb_url} alt='editors'/>
                     </div>
                   );
                 })}

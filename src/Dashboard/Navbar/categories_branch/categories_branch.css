@@ -1,0 +1,86 @@
+
+  #navbar {
+
+    padding-left: 38px;
+    cursor: pointer;
+  }
+  
+  .logo_categories {
+    width: 25px;
+    vertical-align: middle;
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+  
+  .analytics .topButton {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 50px;
+    color: #7a7a7a;
+    float: left;
+    margin-left: 50px;
+    border-bottom: 3px solid transparent;
+    margin-left: 20px;
+  }
+  
+ 
+  
+  .analyticsDropDown {
+    position: absolute;
+    top: 54px;
+    z-index: 2;
+    left: -20px;
+    background-color: white;
+    display: none;
+  }
+  .icons{
+      width: 20px;
+      margin-left: 12px;
+  }
+  .analyticsDropDown .moduleGroup {
+    width: 218px;
+    list-style-type: none;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    text-align: right;
+    line-height: 20px;
+    margin-bottom: 5px;
+    padding: 10px;
+    max-height: 32px;
+  }
+  
+  .modulesSet {
+    position: absolute;
+    top: -3px;
+    height: 707px;
+    text-align: right;
+    
+    right: 219px;
+    background-color: white;
+    
+    display: none;
+    width: 739px;
+  }
+  
+  .singleModule {
+    width: 340px;
+    float: right;
+    list-style-type: none;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 32px;
+    border-bottom: 1px solid #f2f2f2;
+    border-left: 5px solid transparent;
+    padding: 10px;
+    max-height: 32px;
+  }
+  
+  .visible {
+    display: block;
+  }

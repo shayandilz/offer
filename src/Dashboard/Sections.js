@@ -4,7 +4,7 @@ import * as axiosDashboardContext from '../context'
 import Carousel from './Carousel/Carousels'
 import Editors from './Editors/Editors'
 import Action from './Action/Action'
-import MainNavbar from './Navbar/Main'
+import MainNavbar from './Navbar/categories_branch/Main'
 export default class Sections extends Component {
     constructor(){
         super()

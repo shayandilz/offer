@@ -1,5 +1,5 @@
 import React from 'react'
-
+import './categories_branch.css'
 
 
 export default class Module extends React.Component {
@@ -19,14 +19,24 @@ export default class Module extends React.Component {
     
     
     render() {
+      console.log(this.props.object);
+      const objects = this.props.object.map((items, index) => {
+        return(
+          <p>{items.name}</p>
+        )
+        
+      })
       
   
       return (
         <div className='singleModule'
              onMouseEnter={this.toggleHidden}
-             onMouseLeave={this.toggleHidden}
+           
              >
-          {this.props.name}
+             <h6>{this.props.name}</h6>
+             <p>{objects}</p>
+          
+          
         </div>
       )
     }

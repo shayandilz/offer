@@ -2,7 +2,9 @@
 #editors{
     background-color: white
 }
-
+#editors > div > div:nth-child(2){
+  border-left: 1px solid #e6e6e6
+}
 .editorSwiperGallery{
     height: 300px;
     margin: 0 auto;
@@ -14,6 +16,7 @@
   }
 .editorSwiperThumbs{
     height:345px;
+    width: 90px;
     margin: 0 auto;
     position: relative;
     overflow: hidden;
@@ -57,9 +60,31 @@
 #img_editors{
     border-left: 1px solid #e6e6e6 
 }
-.item_name{
+
+#editors_gallery > div > div > h5{
     margin-top: 70px;
     font-size: 15px;
     text-align: center;
     color: #8b8b8b
+}
+#editors_gallery > div > div > div > h6 {
+  text-align: right;
+  float: right;
+  display: block
+}
+#editors_gallery > div > div > div > h6 > span{
+  color: red;
+  font-size: 20px;
+  font-weight: 600
+}
+#editors_gallery > div > div > div > img{
+  width: 90px;
+}
+#editors_gallery > div > div > button:nth-child(4){
+  width: 200px;
+    margin: 0 auto;
+}
+#editors_gallery > div > div > button:nth-last-child(1){
+  width: 200px;
+  margin: 0 auto;
 }

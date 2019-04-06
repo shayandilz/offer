@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import axios from 'axios'
 import Swiper from 'react-id-swiper';
+import './Categories_action.css'
 export default class Categories_action extends Component {
     constructor(props){
         super()
@@ -29,9 +30,11 @@ export default class Categories_action extends Component {
   render() {
     const params = {
       slidesPerView: 7,
-      spaceBetween: 10,
-      loopedSlides:19,
+      spaceBetween: 20,
+     
+      loopFillGroupWithBlank: false,
       loop: true,
+    
       rebuildOnUpdate: true,
       navigation: {
         nextEl: '.swiper-button-next',

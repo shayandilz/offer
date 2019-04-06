@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import ModuleGroupSelector from './ModuleGroupSelector'
 import axios from 'axios'
+import './categories_branch.css'
+
 export default class MainNavbar extends Component {
     constructor(props){
         super(props)
@@ -13,7 +15,7 @@ export default class MainNavbar extends Component {
         axios({
             url:(`${this.state.apiUrl}`),
             method: 'post',
-            data: JSON.stringify({ cat_id:"catroot"})
+            data: JSON.stringify({ cat_id:"catroot" , colored_icon:'true'})
         }).then(res => {
             this.setState({categories: res.data.output.categories})
         })
@@ -23,7 +25,7 @@ export default class MainNavbar extends Component {
       
     return (
       <div>
-      <nav id="navbar_main">
+      <div id="navbar_main">
       <div className=" container"> 
         <div className="row justify-content-cm-center">
             <div className="col-md-1">hello</div>
@@ -31,19 +33,20 @@ export default class MainNavbar extends Component {
                 
               </div>
             <div className="col-md-1">
-                <i className="fas fa-user-circle"><span className="register">Register</span></i>  
+                
+              <i className="fas fa-user-circle"><span className="register">Register</span></i>  
             </div>
         </div>   
       </div>
       <div className=" container"> 
         <div className="row">
-            <div className="col-md-8"></div>
-            <div className="col-md-4 navbar">
+            <div className="col-md-9"></div>
+            <div className="col-md-3" id='navbar'>
                 <ModuleGroupSelector moduleGroups={this.state.categories} />
             </div>
         </div>   
       </div>
-    </nav>
+    </div>
       </div>
     )
   }
