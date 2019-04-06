@@ -1,7 +1,22 @@
-body{
-    background-color: #f9f9f9
-}
 
+@font-face{
+    font-family: 'iransans';
+    src:url('./Layout/fonts/iransans.ttf');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+
+body{
+    background-color: #e6e6e6;
+    font-family: 'iransans'!important
+
+}
+.sections{
+    background-color: #e6e6e6;
+    padding-left: 0px!important;
+    padding-right: 0px!important;
+}
 
 
 
@@ -111,17 +126,8 @@ body{
     
 }
 
-.nowrap{
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis
-}
-#editors{
-    background: white;
-    border-radius: 10px;
-    height: 360px
-    
-}
+
+
 .products_info_extra {
     text-align: right;
     background: #e6e6e6;
@@ -182,78 +188,14 @@ body{
     background: bottom;
     background: #ffffff
 }
-#editors :nth-child(1) h5 {
-    position: absolute;
-    top: 12%;
-    left: 20%;
-    transform: translate(-50%, -50%);
-    color: aliceblue;
-    font-size: 16px;
-    text-align: center;
-    font-weight: 600
-    
-    
-}
+
 .logo_editor{
     width: 80px;
     
      
 }
-.containerClasss{
-    height:380px;
-    margin: 0 auto;
-    position: relative;
-    overflow: hidden;
-    list-style: none;
-    padding: 0;
-    z-index: 1
-}
-
-#editors > div > div :nth-child(2)  {
-    width: 140px;
-    display: block; 
-    margin-left: auto; 
-    margin-right: auto
-   
-}
-
-#editors :nth-child(5)  button {
-    margin: 0 auto; text-align: center; border: none; padding: 10px 20px
-    
-}
-#editors :nth-child(4) p {
-    color: black;
-    text-decoration: line-through;
-    display: inline-block;
-    font-size: 20px;
-    text-align: left;
-    
-}
-#editors :nth-child(4) span{
-    color: red;
-    text-decoration: none;
-    display: inline-block;
-    float: right;
-    font-size: 20px;
-   
-}
-.banner1 > img{
-    width: 100%;
-    height: auto;
-}
-#banner2{
-    padding: 0
-}
-#banner2 :nth-child(1){
-    width: 50%;
 
 
-}
-#banner2 :nth-child(2){
-    width: 50%;
-  
-
-}
 div#root {
     overflow-x: hidden;
 }

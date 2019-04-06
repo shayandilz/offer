@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import axios from 'axios'
 import Swiper from 'react-id-swiper';
+import './Items_action.css'
 export default class Items_action extends Component {
   constructor(props){
     // console.log(props);
@@ -26,40 +27,49 @@ export default class Items_action extends Component {
     }
   render() {
     const params = {
-      ContainerEl: 'section',
-      WrapperEl: 'section',
-      containerClass:'containerClasss',
-      slidesPerView: 5,
-      spaceBetween: 20,
+    
+      containerClass:'items_container',
+      slidesPerView: 4,
+      spaceBetween: 10,
       slidesPerGroup: 1,
-      autoplay:true,
+      centeredSlides:true,
       loop: true,
       loopFillGroupWithBlank: false,
       rebuildOnUpdate: true,
       crossFade:true,
+     
       
     };
-    // console.log(this.state.items);
+
     
     const Items_list = this.state.items.map((item, index) => {
       return(
-        <div className="col-md-2" key={index.toString()} id="editors">
+        <div key={index.toString()} id="items_action" className="mt-4">
              
-                   <div className="figure">
-                      
-                      <h5 className="figure-caption mt-1 pr-3">{item.off_percent}%</h5>
+                   <div>
+                     
+                      <h5 className=" mt-1 pr-3">{item.off_percent > 0 ? item.off_percent: ''}%</h5>
                    </div>
                    <div>
-                      <img className="img_editors" src={item.thumb_url} alt=""/>
+                      <img src={item.thumb_url} alt=""/>
                    </div>
+                   <div className="sexy_line"></div>
                    <div className="col-sm-12"><p className="nowrap">{item.name}</p></div> 
-                   <div><p>{item.last_price}</p><span>{item.current_price}</span></div> 
-                   <div> <button type="button" className=" btn btn-danger btn-sm btn-block"><a href='_blank'>Buy From {item.store_name}</a></button></div>   
+                   <div>
+                      <p>
+                        {item.off_percent > 0 ? new Intl.NumberFormat({ style: 'currency', currency: 'IRR' }).format(item.last_price) : ''}
+                        
+                      </p>
+                      <span>
+                        {new Intl.NumberFormat({ style: 'currency', currency: 'IRR' }).format(item.current_price)}
+                      </span>
+                    </div> 
+                  
         </div>    
       )
     })
     return (
-      <Swiper className="mb-4" {...params}>{Items_list}</Swiper>
+      <Swiper className="mb-4 " {...params}>{Items_list}</Swiper>
     )
   }
 }

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import Swiper from 'react-id-swiper';
+import './Topbanner.css'
 class Topbanner extends Component {
     constructor(props){
         // console.log(props);

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios'
-
+import './Page_3.css'
 class Page_3 extends Component {
     constructor(props){
         // console.log(props);
@@ -23,7 +23,7 @@ class Page_3 extends Component {
 
     render() {
         const banner_3 = this.state.banner.map((items, index) => {
-            return <img key={index.toString()} src={items.url}  alt="page4"/>
+            return <img className='page3' key={index.toString()} src={items.url}  alt="page3"/>
         })
         return (
             <div>{banner_3}</div>

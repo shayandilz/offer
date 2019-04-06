@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import axios from "axios";
 import Swiper from "react-id-swiper";
-
+import './Editors.css'
  class Editors extends Component {
   constructor(props) {
     super(props);
@@ -50,7 +50,11 @@ import Swiper from "react-id-swiper";
       slidesPerView: 1,
       loopedSlides:5,
       centeredSlides:true,
-      loop:true
+      loop:true,
+      effect:'fade',
+      fadeEffect: {
+        crossFade: true
+      },
     };
     const thumbnailParams = {
    
@@ -66,7 +70,7 @@ import Swiper from "react-id-swiper";
 
     return (
       <React.Fragment>
-        <div className="container">
+        <div className="container" id='editors'>
           {this.state.original.length && (
             <div className="row">
             <div className="col-md-10">
@@ -77,7 +81,8 @@ import Swiper from "react-id-swiper";
                     <div className='row'>
                     
                       <div className="col-md-6">
-                        <h5>{items.name}</h5>
+                        <h5 className="item_name">{items.name}</h5>
+                        <div className="sexy_line"></div>
                           <div>
                             <h6>{items.store_name}</h6>
                             <img src={items.store.thumb_url} alt="editors" />
@@ -85,8 +90,8 @@ import Swiper from "react-id-swiper";
                         <p>{items.current_price}</p>
                         <p>{items.last_price}</p>
                       </div>
-                      <div className="col-md-6">
-                        <img className="img_editors" src={items.thumb_url} alt='editors'/>
+                      <div className="col-md-6 mt-4" id="img_editors">
+                        <img src={items.thumb_url} alt='editors'/>
                       </div>
                     </div>
                       

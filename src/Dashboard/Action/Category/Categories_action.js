@@ -28,14 +28,11 @@ export default class Categories_action extends Component {
    
   render() {
     const params = {
-      slidesPerView: 9,
+      slidesPerView: 7,
       spaceBetween: 10,
-     
       loopedSlides:19,
       loop: true,
-      
       rebuildOnUpdate: true,
-
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev'
