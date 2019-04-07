@@ -51,21 +51,19 @@ import './Editors.css'
       loopedSlides:5,
       centeredSlides:true,
       loop:true,
+      autoplay:true,
       effect:'fade',
       fadeEffect: {
-        crossFade: true
+      crossFade: true
       },
     };
     const thumbnailParams = {
-   
       containerClass:'editorSwiperThumbs',
       slideClass:'sliderThumb',
       direction: "vertical",
       slidesPerView: 4,
       loopedSlides:5,
-      loop:true
-      
-      
+      loop:true 
     };
 
     return (
@@ -82,7 +80,7 @@ import './Editors.css'
                         <div className="col-md-6">
                           <h5>{items.name}</h5>
                           <div className="sexy_line mb-2"></div>
-                          <div>
+                          <div className='pb-3'>
                             <h6>{items.store_name}<span>: فروشنده</span></h6>
                             <img src={items.store.thumb_url} alt="editors" />
                           </div>

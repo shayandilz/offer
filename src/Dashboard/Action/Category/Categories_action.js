@@ -15,26 +15,20 @@ export default class Categories_action extends Component {
       var new_request = JSON.parse(this.props.value.request)
       new_request.colored_icon = "true";
         axios({
-          
           url:(`${this.state.apiUrl}${this.props.value.uri} `),
           method: 'post',
           data: JSON.stringify(new_request)
-          
         }).then(res => {
           this.setState({cat_list: res.data.output.categories})
-          
         })
-         
       }
    
   render() {
     const params = {
       slidesPerView: 7,
       spaceBetween: 20,
-     
       loopFillGroupWithBlank: false,
       loop: true,
-    
       rebuildOnUpdate: true,
       navigation: {
         nextEl: '.swiper-button-next',
@@ -44,7 +38,6 @@ export default class Categories_action extends Component {
     return(
       <React.Fragment>
         {this.state.cat_list.length > 0 && (
-        
             <Swiper {...params}>
               {this.state.cat_list.map(( item, index) => {
                 return (
@@ -57,7 +50,6 @@ export default class Categories_action extends Component {
                 );
               })}
             </Swiper>
-        
         )}
       </React.Fragment>
     )

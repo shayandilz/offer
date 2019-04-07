@@ -3,7 +3,6 @@ import axios from 'axios'
 import './Page_3.css'
 class Page_3 extends Component {
     constructor(props){
-        // console.log(props);
         super(props)
         this.state = {
             apiUrl:'https://api2.off-er.ir/user/get/carousel',  
@@ -20,7 +19,6 @@ class Page_3 extends Component {
             this.setState({banner: res.data.output})
         })
     }
-
     render() {
         const banner_3 = this.state.banner.map((items, index) => {
             return <img className='page3' key={index.toString()} src={items.url}  alt="page3"/>

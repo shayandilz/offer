@@ -12,35 +12,31 @@ export const axiosDashboard = () => {
       .then(response => response.data)
       .catch(error => {
         throw error;
-      });
-       
+      });  
   };
-
 
 const reducer = (state, action) => {
     switch(action.type){
         case 'SEARCH_TRACKS':
         return {
-            ...state,
-            items: action.payload,
-            heading: 'Search Results'
+          ...state,
+          items: action.payload,
+          heading: 'Search Results'
         };
-        default:
-        return state
+      default:
+      return state
     }
 }
 
- export class Provider extends Component {
-     state = { 
-         dispatch:action => this.setState(state => reducer(state, action))
-     }
- 
+export class Provider extends Component {
+  state = { 
+    dispatch:action => this.setState(state => reducer(state, action))
+  }
   render() {
-   
     return (
-     <Context.Provider value={this.state}>
-            {this.props.children}
-     </Context.Provider>
+      <Context.Provider value={this.state}>
+          {this.props.children}
+      </Context.Provider>
     )
   }
 }

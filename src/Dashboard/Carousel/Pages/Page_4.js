@@ -3,7 +3,6 @@ import axios from 'axios'
 import './Page_4.css'
 class Page_4 extends Component {
     constructor(props){
-        // console.log(props);
         super(props)
         this.state = {
             apiUrl:'https://api2.off-er.ir/user/get/carousel',  

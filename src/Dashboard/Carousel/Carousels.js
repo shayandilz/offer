@@ -4,12 +4,8 @@ import Page3 from './Pages/Page_3';
 import Page4 from './Pages/Page_4'
 class Carousels extends Component {
     constructor(props){
-        // console.log(props);
-        
-        super()
-        
-    }
-    
+        super(props)
+}
     render() {
         if(this.props.value.page === "1"){
             return <Topbanner value={this.props.value}/>

@@ -1,6 +1,6 @@
 /*-------------------------------------Editors-----------------------------------------*/
 #editors{
-    background-color: white
+  background-color: white
 }
 #editors > div > div:nth-child(2){
   border-left: 1px solid #e6e6e6
@@ -15,66 +15,74 @@
     z-index: 1;
   }
 .editorSwiperThumbs{
-    height:345px;
-    width: 90px;
-    margin: 0 auto;
-    position: relative;
-    overflow: hidden;
-    list-style: none;
-    padding: 0;
-    z-index: 1;
+  height:345px;
+  width: 90px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  list-style: none;
+  padding: 0;
+  z-index: 1;
   }
 .thumb_editors{
-    width: 70px;
-    float: right;
-    display: block;
-    height: 70px;
-    margin-top: 2px;
-    margin-right: 5px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    border-radius: 99em;
-    border: 1px solid #eee;
-    box-shadow: 0px 0px 17px -10px 
-  }
+  float: right;
+  padding: 7px;
+  display: block;
+  height: 70px;
+  margin-top: 2px;
+  margin-right: 5px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-radius: 99em;
+  border: 1px solid #eee;
+  box-shadow: 0px 0px 17px -10px; 
+  width: 70px;
+}
+
 .sliderThumb{
-    -webkit-flex-shrink: 0;
-    -ms-flex-negative: 0;
-    flex-shrink: 0;
-    width: 100%;
-    height: 76.5px;
-    position: relative;
-    -webkit-transition-property: -webkit-transform;
-    transition-property: -webkit-transform;
-    -o-transition-property: transform;
-    transition-property: transform;
-    transition-property: transform,-webkit-transform;
-  }
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  width: 100%;
+  height: 76.5px;
+  position: relative;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  -o-transition-property: transform;
+  transition-property: transform;
+  transition-property: transform,-webkit-transform;
+  -webkit-flex-shrink: 0;
+}
 #img_editors > img{
-    width: 260px;
-    height: 260px;
-    display: block;
-    margin: auto;
-  }
+  height: 260px;
+  display: block;
+  margin: auto;
+  width: 260px;
+}
 #img_editors{
-    border-left: 1px solid #e6e6e6 
+  border-left: 1px solid #e6e6e6 
 }
 
 #editors_gallery > div > div > h5{
-    margin-top: 70px;
-    font-size: 15px;
-    text-align: center;
-    color: #8b8b8b
+  font-size: 15px;
+  text-align: center;
+  color: #8b8b8b;
+  margin-top: 70px;
+  height: 30px;
 }
 #editors_gallery > div > div > div > h6 {
   text-align: right;
   float: right;
-  display: block
+  display: block;
+  font-size: 14px;
+  font-weight: 600
+}
+#editors_gallery > div > div:nth-child(3) {
+  height: 20px;
 }
 #editors_gallery > div > div > div > h6 > span{
   color: red;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 600
 }
 #editors_gallery > div > div > div > img{
@@ -82,7 +90,8 @@
 }
 #editors_gallery > div > div > button:nth-child(4){
   width: 200px;
-    margin: 0 auto;
+  margin: 0 auto;
+  text-decoration: line-through;
 }
 #editors_gallery > div > div > button:nth-last-child(1){
   width: 200px;

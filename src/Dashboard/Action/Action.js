@@ -4,7 +4,6 @@ import ItemsAction from './Items/Items_action'
 import axios from 'axios'
 class Action extends Component {
     constructor(props){
-        // console.log(props);
         super()
         this.state = {
             apiUrl:'https://api2.off-er.ir/user/get/action',

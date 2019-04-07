@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import ModuleGroupSelector from './ModuleGroupSelector'
 import axios from 'axios'
 import './categories_branch.css'
-
+import Search from '../../../Search/Search'
 export default class MainNavbar extends Component {
     constructor(props){
         super(props)
@@ -21,19 +21,17 @@ export default class MainNavbar extends Component {
         })
     }
   render() {
-    //   console.log(this.state.categories);
       
     return (
       <div>
-      <div id="navbar_main">
-      <div className=" container"> 
-        <div className="row justify-content-cm-center">
-            <div className="col-md-1">hello</div>
-              <div className="col-md-10">
-                
-              </div>
+        <div id="navbar_main">
+          <div className=" container"> 
+            <div className="row justify-content-cm-center">
+              <div className="col-md-1">hello</div>
+                <div className="col-md-10">
+                  <Search />
+                </div>
             <div className="col-md-1">
-                
               <i className="fas fa-user-circle"><span className="register">Register</span></i>  
             </div>
         </div>   
@@ -41,12 +39,12 @@ export default class MainNavbar extends Component {
       <div className=" container"> 
         <div className="row">
             <div className="col-md-9"></div>
-            <div className="col-md-3" id='navbar'>
-                <ModuleGroupSelector moduleGroups={this.state.categories} />
-            </div>
-        </div>   
-      </div>
-    </div>
+              <div className="col-md-3" id='navbar'>
+                  <ModuleGroupSelector moduleGroups={this.state.categories} />
+              </div>
+            </div>   
+          </div>
+        </div>
       </div>
     )
   }
