@@ -25,8 +25,8 @@ export default class Categories_action extends Component {
    
   render() {
     const params = {
-      slidesPerView: 7,
-      spaceBetween: 20,
+      slidesPerView: 8,
+      spaceBetween: 10,
       loopFillGroupWithBlank: false,
       loop: true,
       rebuildOnUpdate: true,

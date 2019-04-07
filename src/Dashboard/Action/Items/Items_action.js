@@ -23,12 +23,12 @@ export default class Items_action extends Component {
     const params = {
       containerClass:'items_container',
       slidesPerView: 4,
-      spaceBetween: 10,
+      spaceBetween: 15,
       slidesPerGroup: 1,
       centeredSlides:true,
       autoplay:true,
       loop: true,
-      loopFillGroupWithBlank: false,
+      loopFillGroupWithBlank: true,
       rebuildOnUpdate: true,
       crossFade:true,
     };
@@ -42,7 +42,7 @@ export default class Items_action extends Component {
             <img src={item.thumb_url} alt=""/>
           </div>
           <div className="sexy_line"></div>
-            <div className="col-sm-12"><p className="nowrap">{item.name}</p></div> 
+            <div className="col-sm-10"><p className="nowrap">{item.name}</p></div> 
               <div>
                 <p>
                   {item.off_percent > 0 ? new Intl.NumberFormat({ style: 'currency', currency: 'IRR' }).format(item.last_price) : ''}
