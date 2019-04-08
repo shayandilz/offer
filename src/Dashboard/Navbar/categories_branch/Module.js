@@ -1,5 +1,5 @@
 import React from 'react'
-import './categories_branch.css'
+import './Navbar.css'
 
 
 export default class Module extends React.Component {
@@ -18,20 +18,23 @@ export default class Module extends React.Component {
   render() {
      const objects = this.props.object.slice(0,5)
       return (
-        <div className='items'
+        <ul className='items'
           onMouseEnter={this.toggleHidden}
-           
+     
           >
-          <div className='item'>
-            <h6>{this.props.name}</h6>
-              <div>{objects.map((items, index) => {
+          <li className='item'>
+            <a className="object">{this.props.name}</a>
+            <ul style={{listStyle:'none'}}>
+            {objects.map((items, index) => {
                 return(
-                  <p>{items.name}</p>
+                  <li><a key={index.toString()} className='object_type'>{items.name}</a></li>
                 )
               })}
-            </div>
-          </div>
-        </div>
+            </ul>
+              
+            
+          </li>
+        </ul>
       )
     }
   }

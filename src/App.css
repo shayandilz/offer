@@ -13,6 +13,7 @@ body{
 
 }
 .sections{
+    margin-top: 150px;
     background-color: #e6e6e6;
     padding-left: 0px!important;
     padding-right: 0px!important;
@@ -20,30 +21,7 @@ body{
 
 
 
-/*NAVBAR*/
-#navbar_main{
-    border-bottom: 2px solid grey;
-    padding-bottom: 3px;
-    padding-top: 20px
-}
-#navbar_main > div > div > div > a {
-    padding-bottom: 15px;
-}
-#navbar_main > div > div > div > i {
-    padding-bottom: 15px;
-}
-#navbar_main > div > div > div > i > span{
-    margin-left: 15px;
-    color: black;
-    font-size: 15px;   
-}
-.fa-search{
-    top: 10px
-    
-}
-#navbar_main > div >div > div > img {
-    width:30px
-}
+
 /*CATEGORY SECTION*/
 #category{
     border-bottom: 2px solid grey;
@@ -51,44 +29,8 @@ body{
 #category > div > div > div {
     margin-left: 60px
 } 
-.fa-user-circle{
-    color: #8a151b;
-    font-size: 30px;
-    
-}
-#form_div{
-    position: relative;
-    width:100%;
-}
-#form_div > input {
-    background-color: #8b8b8b;
-    text-align: right
-    
-}
-#form_div > button{
-    position: absolute;
-    bottom: 4px
-}
-#form_div > ::-webkit-input-placeholder { /* WebKit browsers */
-    color: #d2d2d2;
-    text-align: right;
-    direction: rtl
-}
-#form_div > form > ::-webkit-input{
-    text-align: end
-}
-:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-    color: white;
-    text-align: right;
-}
-::-moz-placeholder { /* Mozilla Firefox 19+ */
-    color: white;
-    text-align: right;
-}
-:-ms-input-placeholder { /* Internet Explorer 10+ */
-    color: white;
-    text-align: right;
-}
+
+
 /*Banner & Category Icon*/
 #B_cat{
     background-color: #d2d2d2;

@@ -1,6 +1,6 @@
 import React from 'react'
 import ModuleGroup from './ModuleGroup'
-import './categories_branch.css'
+import './Navbar.css'
 import logo from '../../../Layout/category.png'
 class ModuleGroupSelector extends React.Component {
     constructor(props) {
@@ -17,12 +17,12 @@ class ModuleGroupSelector extends React.Component {
   }
   render() {
     const moduleGroups = this.props.moduleGroups;
-      return (
-        <div className='analytics' onClick={this.toggleHidden}>
-            <img className='logo_categories' src={logo} alt='png_logo' />
-              <div className='topButton'>
-                دسته بندی ها
-              </div>
+    return (
+      <div className='analytics' onClick={this.toggleHidden}>
+        <img className='logo_categories' src={logo} alt='png_logo' />
+          <div className='topButton'>
+            دسته بندی ها
+          </div>
         <div className={`analyticsDropDown ${this.state.isVisible ? 'visible': ''}`}>
           {moduleGroups.map((item, index) => <ModuleGroup key={index.toString()} id={item.key} name={item.name} icon={item.icon.url}/>)}
         </div>

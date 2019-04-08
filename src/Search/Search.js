@@ -36,12 +36,10 @@ import {Consumer} from '../context'
               const { dispatch } = value;
               return (
                       <form onSubmit={this.findProduct.bind(this, dispatch)}>
-                        <div>
-                            <div className="form-group" id="form_div">
-                                
+                            <div className="form-group" id="form_div"> 
                                 <input type="text" 
                                         className="form-control form-control-md"
-                                        placeholder="...Products" 
+                                        placeholder="...محصولات دسته یا برند مورد نظرتان را انتخاب کنید" 
                                         name="productTitle"
                                         value={this.state.productTitle}
                                         onChange={this.onChange}     
@@ -51,7 +49,6 @@ import {Consumer} from '../context'
                                     <i className="fas fa-search"></i>
                                 </button>
                             </div>
-                        </div>
                       </form>   
                     )
           }}

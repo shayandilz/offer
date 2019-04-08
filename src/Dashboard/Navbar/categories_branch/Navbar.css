@@ -1,0 +1,196 @@
+/*------------------------------NAVBAR-TOP-----------------------*/
+nav{
+  background-color: white
+}
+#navbar_top{
+  border-bottom: 2px solid #d2d2d2;
+  padding-top: 10px;
+}
+#navbar_top > div > div > div {
+  padding-left: 0;
+  padding-right: 0;
+}
+#navbar_top > div > div > div > div > div > img {
+  width: 45px;
+}
+.offer_decide {
+  font-size: 15px;
+  float: right;
+  padding-top: 10px;
+}
+.offer_register{
+  padding-left: 40px;
+  font-size: 12px;
+  color: #d2d2d2;
+  display: inline-flex;
+  float: left;
+  padding-top: 12px;
+}
+.fa-user-circle{
+  color: #be2f05;
+  font-size: 45px;
+  float: right
+}
+#navbar_top > div > div > div > div:nth-child(3) > span{
+  float: left;
+}
+#form_div{
+  position: relative;
+  width:100%;
+  margin-left: 5px;
+}
+#form_div > input {
+  background-color: #8b8b8b;
+  text-align: right
+  
+}
+#form_div > button{
+  position: absolute;
+  bottom: 0px;
+  color: white;
+}
+#form_div > ::-webkit-input-placeholder { /* WebKit browsers */
+  color: #d2d2d2;
+  font-size: 12px;
+  text-align: right;
+  direction: rtl
+}
+#form_div > form > ::-webkit-input{
+  text-align: end
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  color: white;
+  text-align: right;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+  color: white;
+  text-align: right;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+  color: white;
+  text-align: right;
+}
+.fa-search{
+  top: 10px
+}
+.fa-search:after {
+  content: "";
+  position: absolute;
+  left: 38px;
+  top: 0;
+  width: 1px;
+  height: 36px;
+}
+.fa-search:after {
+  
+  background: -moz-linear-gradient(top,  rgba(255,255,255,0) 0%, rgba(255,255,255, 0.9) 24%, rgba(255,255,255,1) 50%, rgba(255,255,255, 0.9) 79%, rgba(255,255,255,0) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(208,228,247,0)), color-stop(24%,rgba(115,177,231,0.48)), color-stop(50%,rgba(12,16,255,1)), color-stop(79%,rgba(83,159,225,0.42)), color-stop(100%,rgba(135,188,234,0))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  rgba(208,228,247,0) 0%,rgba(115,177,231,0.48) 24%,rgba(12,16,255,1) 50%,rgba(83,159,225,0.42) 79%,rgba(135,188,234,0) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  rgba(208,228,247,0) 0%,rgba(115,177,231,0.48) 24%,rgba(12,16,255,1) 50%,rgba(83,159,225,0.42) 79%,rgba(135,188,234,0) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  rgba(208,228,247,0) 0%,rgba(115,177,231,0.48) 24%,rgba(12,16,255,1) 50%,rgba(83,159,225,0.42) 79%,rgba(135,188,234,0) 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgba(255,255,255, 0.9) 52%,rgba(255,255,255,1) 50%,rgba(255,255,255, 0.9) 36%,rgba(255,255,255,0)  100%); /* W3C */
+}
+/*------------------------------NAVBAR-BOTTOM-----------------------*/
+#navbar_bottom{
+  border-bottom: 2px solid #e6e6e6;
+}
+#navbar_bottom > div > div > div {
+  padding-left: 0;
+  padding-right: 0
+}
+.favorites {
+  float: left;
+  padding-top: 16px;
+  font-size: 14px;
+}
+.logo_categories {
+  width: 25px;
+  vertical-align: middle;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.analytics {
+  float: right;
+  cursor: pointer;
+}
+.analytics .topButton {
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 50px;
+  color: #7a7a7a;
+  float: left;
+  margin-left: 50px;
+  border-bottom: 3px solid transparent;
+  margin-left: 20px;
+}
+
+.analyticsDropDown {
+  position: absolute;
+  top: 53px;
+  z-index: 2;
+  left: -59px;
+  background-color: white;
+  display: none;
+}
+
+.icons{
+  width: 20px;
+  margin-left: 12px;
+}
+.moduleGroup:hover{
+  box-shadow: 0px 4px 13px grey;
+  transition: 0.2s;
+  border-radius: 3px
+
+}
+.analyticsDropDown .moduleGroup {
+  width: 218px;
+  list-style-type: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  text-align: right;
+  line-height: 20px;
+  margin-bottom: 5px;
+  padding: 10px;
+  max-height: 32px;
+}
+  
+.modulesSet {
+  position: absolute;
+  top: -1px;
+  height: 704px;
+  text-align: right;
+  right: 218px;
+  background-color: white;
+  display: none;
+  width: 875px;
+  
+}
+.object {
+  font-size: 12px;
+  font-weight: 600
+}
+.object_types{
+  list-style: none;
+}
+.items {
+  width: 218px;
+  float: right;
+  overflow: hidden;
+  text-align: right;
+  list-style: none;
+  height: 160px;
+}
+
+.items .item {
+  box-sizing: border-box;
+  padding: 0px;
+  font-size: smaller;
+}
+
+.visible {
+  display: block;
+}

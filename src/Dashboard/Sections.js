@@ -28,16 +28,16 @@ render(){
         }
     })
     return(
-        <div >
-            <MainNavbar />
-                <div className='container'>
-                    <div className='row justify-content-md-center'>
-                        <div className='col-md-10 sections'>
-                            {section_map}
-                        </div>
+    <div>
+        <MainNavbar />
+            <div className='container'>
+                <div className='row justify-content-md-center'>
+                    <div className='col-md-10 sections'>
+                        {section_map}
                     </div>
                 </div>
             </div>
+    </div>
         )
     }
 }
