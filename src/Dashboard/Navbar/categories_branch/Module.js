@@ -27,7 +27,7 @@ export default class Module extends React.Component {
             <ul style={{listStyle:'none'}}>
             {objects.map((items, index) => {
                 return(
-                  <li><a key={index.toString()} className='object_type'>{items.name}</a></li>
+                  <li key={index.toString()}><a  className='object_type'>{items.name}</a></li>
                 )
               })}
             </ul>

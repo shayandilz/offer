@@ -36,7 +36,7 @@ export default class Items_action extends Component {
       return(
         <div key={index.toString()} id="items_action" className="mt-4">
           <div>
-            <h5 className=" mt-1 pr-3">{item.off_percent > 0 ? item.off_percent: ''}%</h5>
+            {item.off_percent > 0 ? <h5 className="mt-1 pr-3">{item.off_percent}%</h5> : ''}
           </div>
           <div>
             <img src={item.thumb_url} alt=""/>

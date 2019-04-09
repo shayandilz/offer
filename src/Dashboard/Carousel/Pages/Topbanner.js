@@ -26,11 +26,17 @@ class Topbanner extends Component {
             el: '.swiper-pagination',
             clickable: true
       },
+      cubeEffect: {
+        slideShadows: true,
+      },
+      effect:'cube',
             containerClass: 'topbanner',
             slidesPerView: 1,
             slidesPerGroup: 1,
             runCallbacksOnInit:true,
             speed:300,
+            loop:true,
+            autoplay:true,
             slidesPerColumn:1,
             loopFillGroupWithBlank: false,
             preloadImages:true,

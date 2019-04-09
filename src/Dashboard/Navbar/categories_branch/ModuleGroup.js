@@ -38,7 +38,7 @@ export default class ModuleGroup extends React.Component {
     return (
       <div className='moduleGroup'
         onMouseEnter={this.toggleHidden} 
-        onMouseLeave={this.toggleHidden}
+        onMouseLeave={this.toggleHidden} 
             
       >
       {this.props.name}

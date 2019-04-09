@@ -54,14 +54,15 @@
     text-align: center;
     margin-top: 15px;
     text-overflow: ellipsis;
-    font-size: 20px;
+    font-size: 13px;
     direction: rtl;
+    width: 190px;
 
 }
 #items_action :nth-child(5) p {
     color: black;
     text-decoration: line-through;
-    font-size: 20px;
+    font-size: 17px;
     text-align: center;
     
 }
@@ -70,6 +71,6 @@
     text-decoration: none;
     display: block;
     text-align: center;
-    font-size: 20px;
+    font-size: 17px;
    
 }
