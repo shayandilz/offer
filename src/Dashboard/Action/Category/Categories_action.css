@@ -1,9 +1,9 @@
-#icon_circle{
+#icon_circle {
     background-color: #f9f9f9;
     border-radius: 50%;
     margin-top: 25px;
     height: 95px;
-    box-shadow: 1px 0px 14px -3px #888888;
+    box-shadow: 1px 0 14px -3px #888888;
 }
 
 #icon_circle > a > h6 {
@@ -11,12 +11,12 @@
     text-align: center;
     margin-top: 10px;
     text-decoration: none;
-    
+
 }
-#icon_circle > a > img{
+#icon_circle > a > img {
     width: 35px;
     height: 35px;
     text-align: center;
     margin-left: 40px;
-    margin-top: 10px
+    margin-top: 10px;
 }

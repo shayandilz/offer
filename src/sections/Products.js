@@ -42,7 +42,7 @@ export default class Products extends Component {
               <div className="products_info col-md-6">
                   <h6>{product.itemProduct.name}</h6>
                     <div className="col-md-6">
-                      <img src={product.itemProduct.store.thumb_url} alt="product" />
+                     
                       
                      </div>
                      <div className="products_info_extra" style={{textAlign:"right"}}>

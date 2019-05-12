@@ -1,0 +1,48 @@
+body{
+  background-color: #f9f9f9!important
+}
+.sexy_line { 
+  margin: 10px 0;
+  height: 1px;
+  background: grey;
+  background: -webkit-gradient(linear, 0 0, 99% 0, from(white), to(white), color-stop(50%, #e6e6e6));
+  margin-top: 24px;
+}
+#products_search{
+    padding-top: 200px;
+}
+#searchresult {
+  background-color: white;
+  margin: 10px;
+  box-shadow: 1px 0px 14px -3px #888888;
+  border-radius: 20px;
+  max-width: 23%!important
+}
+#searchresult > img {
+  width:200px;
+  height: 200px;
+  display: block;
+  padding-top: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#searchresult > :nth-child(3) {
+  text-align: right;
+  color: #d2d2d2;
+  font-size: 15px
+}
+#searchresult > :nth-child(4) {
+  text-align: center;
+  color: #292826;
+  font-size: 15px
+}
+#searchresult > :nth-child(6) > button {
+  text-align: center;
+  height: 36px;
+  width: 155px;
+  margin: 11px -50px;
+  position: relative;
+  top: 50%;
+  left: 39%;
+  font-size: 12px;
+}

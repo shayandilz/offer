@@ -120,12 +120,8 @@ body{
 div#root {
     overflow-x: hidden;
 }
-#searchresult > div > div > img {
-    width:120px;
-    display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
+
+
 #footer {
     height: 200px;
     background: #D2D2D2;

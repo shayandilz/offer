@@ -1,28 +1,33 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
-
+import {Link} from 'react-router-dom'
+import './Search.css'
 const SearchResult = (props) => {
-    const { title, price, thumb, id, store_name } = props
+    const {
+        title,
+        current_price,
+        lowest_price,
+        thumb,
+        id,
+        store_name
+    } = props
 
-    
-  return (
-      
-    <div className="col-md-4" id="searchresult">
-      <div className="card mb-2 ml-2 mt-2 shadow-sm">
-        <div className="card-body">
-            
-            <img  src={thumb} alt=""/>
-            <h6 className="muted">{store_name}</h6>
+    return (
+
+        <div className="col-md-3" id="searchresult">
+            <img src={thumb} alt=""/>
+            <div className="sexy_line"></div>
+            <p className="muted">{store_name}</p>
             <h6>{title}</h6>
-            <p >
-               {price} 
-            </p>
-            <Link to={`products/item/${id}`} className="btn btn-dark btn-block">
-            <i className="fa fa-chevron-right"></i> View Product
+
+            <p>{lowest_price}</p>
+            <Link to={`products/item/${id}`}>
+                <button type="button" className="btn btn-light rounded-pill">{
+                        new Intl
+                            .NumberFormat({style: 'currency', currency: 'IRR'})
+                            .format(current_price)
+                    }</button>
             </Link>
         </div>
-      </div>
-    </div>
-  )
+    )
 }
 export default SearchResult
